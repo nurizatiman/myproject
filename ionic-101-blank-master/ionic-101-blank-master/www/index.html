@@ -61,7 +61,7 @@ var app=angular.module('app',['ionic']);
 /*define CONTROLLERS & CONFIGS*/
 /******************************/
 app.service('DataService', function($http){
-	var url="https://script.google.com/macros/s/AKfycbwztSkQKLJXcxXMDUSZnZ1reubsaX-_0-an2av3cYX6hjaKYxw/exec";
+	var url="https://script.google.com/macros/s/AKfycbzgnbS06e1Ko3rhoN6dvrw4EtCx97XRsaV_dXl1fCSQfBDFNM_W/exec";
 	return {   
 		getItems: function(){
 			return $http.get(url+"?cmd=getrecords").then(function(response){
